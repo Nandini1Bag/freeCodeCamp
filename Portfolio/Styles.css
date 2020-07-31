@@ -1,0 +1,109 @@
+#welcome-section{
+    background-color: rgb(44, 45, 46); 
+    width:100%;
+    height:100vh;
+    text-align: center;
+    font-size: 40px;
+    color: #f2f2f2;
+   }
+   #center{
+ padding-top: 15%; 
+   }
+   #web{
+      color: red;
+      font-size: 30px;  
+   }
+   #underlinehead{
+      color: #f2f2f2;
+      font-weight: 700;
+      font-size: 40px;
+      text-decoration: underline;  
+      padding: 83px 8px 0px 5px; 
+   }
+   #projects{
+    background-color: rgb(62, 70, 114); 
+    width:100%;
+    height:220vh;
+    text-align:center;
+   }
+
+
+   #projectTiles{
+      display: flex;
+      flex-wrap: wrap;
+      list-style-type:none;
+      padding: 0;
+      margin: 0;
+   }
+   #profile-link{
+      padding: 15px 32px;
+      border: none;
+      text-decoration: none;
+      font-size: 18px;
+      color:white; 
+      display: inline-block;
+      background-color: #363535;
+      width: 139px;
+   }
+   .buttonstyle  {
+      padding: 15px 32px;
+      border: none;
+      text-decoration: none;
+      font-size: 18px;
+      color:white; 
+      display: inline-block;
+      background-color: #363535;
+      width: 239px;
+   }
+
+   .project-tile{
+      width: 100px;
+      margin: 10px;
+      padding: 25px 130px 55px 100px;
+      text-align: center;  
+   }
+
+   #navbar{
+    top:0px;
+    position: fixed;
+    background-color: red;
+    width:100%;
+    height:70px; 
+   }
+   .nav-link{
+    color: #f2f2f2;
+    text-align: center;
+    padding: 0px 30px;
+    margin-left:1px; 
+    text-decoration: none;
+   
+   }
+   nav ul{
+      float: right; 
+   }
+   nav ul li {
+   display:inline-flex;
+   list-style-type:none;
+   font-size:30px;
+   font-weight:20px;
+   }
+
+
+   @media screen and (max-width: 700px) {
+      #projectTiles{
+         display: block;
+      }
+      #projects{ 
+         height: calc(100% - 4em);
+        }
+     
+      img{
+         width: 100vh;
+      }
+      #underlinehead{
+         font-size:45px; 
+      }
+      .buttonstyle{
+        width: 86vh;
+      }
+    }
