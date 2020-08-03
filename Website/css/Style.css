@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Century Gothic;
+}
+
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)) ,url(../image.jpg);
+    /*The linear-gradient() CSS function creates an image
+     consisting of a progressive transition between two or more colors along a straight line.*/
+    height: 100vh;
+    background-size: cover;/* Resize the background image to cover the entire container */
+    background-position: center;/* Center the image */
+}
+
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+}
+
+ul li{
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;/*ease - specifies a transition effect with a slow start, then fast, then end slowly (this is default)*/
+}
+
+ul li a:hover{
+    background-color:#fff;
+    color: #000;
+
+}
+ul li.active a{
+    background-color:#fff;
+    color: #000;
+}
+.logo{
+    float: left;
+    height: auto;
+    width: 150px;
+}
+.main{
+    max-width: 1200px;
+    margin:auto;
+}
+.title{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    /*The transform property applies a 2D or 3D transformation to an element. 
+    translate(x,y):-	Defines a 2D translation*/
+}
+.title h1{
+    color: white;
+    font-size: 60px;
+}
+.button{
+    position: absolute;
+    top:62%;
+    left: 50%;
+    transform: translate(-50% ,-50%); 
+}
+.btn{
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+    transition: 0.6s ease;
+}
+.btn:hover{
+    background-color:#fff;
+    color: #000;
+}
