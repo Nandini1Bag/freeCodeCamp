@@ -120,6 +120,7 @@ showcase h1{
 .courses{
 display: flex;
 text-align: center;
+background: #cc6055; 
 }
 
 
@@ -147,3 +148,40 @@ footer{
 }
 
 
+
+
+#pop:hover{
+  animation: pop 0.3s linear 1;
+}
+
+#arrow-right {
+  width: 0; 
+  height: 0; 
+  margin-top: 90px;
+  border-top: 35px solid transparent;
+  border-bottom: 35px solid transparent;
+  
+  border-left: 40px solid black;
+}
+
+#arrow-right:hover{
+  animation: pop 0.3s linear 1;
+}
+
+@keyframes pop{
+  50%  {transform: scale(1.2);}
+}
+
+#arrow-left {
+  width: 0; 
+  height: 0; 
+  margin-top: 90px;
+  border-top: 35px solid transparent;
+  border-bottom:35px solid transparent; 
+  
+  border-right:40px solid black; 
+}
+
+#arrow-left:hover{
+  animation: pop 0.3s linear 1;
+}
