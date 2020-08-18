@@ -10,7 +10,7 @@ const Header=(props)=>{
                <a href="#">Contact Us</a>
                <a href="#">About Us</a>
                </nav>
-               <SocialFollow />             
+               <SocialFollow size='2x' padding='25px 50px'/>             
            </header>
         )
     }

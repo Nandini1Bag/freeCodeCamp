@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './style.css';
 import Card from '../UI/Card';
+import SocialFollow from "../SocialFollow";
 
 import blogPost from '../../data/blog.json';
 import { NavLink } from 'react-router-dom';
@@ -36,7 +37,7 @@ const Sidebar = (props) => {
 
             <Card style={{ marginBottom: '20px', padding: '20px', boxSizing: 'border-box' }}>
                 <div className="cardHeader">
-                    <span>Social Network</span>
+                    <SocialFollow size='2x' padding='5px'/>
                 </div>
             </Card>
 
