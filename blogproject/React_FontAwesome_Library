@@ -1,0 +1,11 @@
+1)react-fontawesome:-A React component for the font-awesome icon library.
+
+https://www.npmjs.com/package/@fortawesome/react-fontawesome
+
+ex:-
+https://codesandbox.io/s/401k56m3kw?file=/src/styles.css:230-412
+
+Installation
+$ npm i --save @fortawesome/free-brands-svg-icons
+$ npm i --save @fortawesome/fontawesome-svg-core
+$ npm i --save @fortawesome/react-fontawesome

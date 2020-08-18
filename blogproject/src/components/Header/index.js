@@ -1,5 +1,6 @@
 import React from 'react';
 import './style.css';
+import SocialFollow from "../SocialFollow";
 
 const Header=(props)=>{
         return (
@@ -8,11 +9,9 @@ const Header=(props)=>{
                <a href="#">Home</a>
                <a href="#">Contact Us</a>
                <a href="#">About Us</a>
-               </nav> 
-               <div>
-                social media links
-               </div>
-            </header>
+               </nav>
+               <SocialFollow />             
+           </header>
         )
     }
 

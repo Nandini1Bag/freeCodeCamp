@@ -1,0 +1,13 @@
+/* SOCIAL STUFF */
+.social-container {
+  padding: 25px 50px;
+}
+.social-container a {
+  margin: 0 1rem;
+  transition: transform 250ms;
+  display: inline-block;
+}
+
+.social-container a:hover {
+  transform: translateY(-2px);
+}
