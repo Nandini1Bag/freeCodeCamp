@@ -10,9 +10,9 @@ const Layout = (props) => {
         {props.children}
         <SideBar />
     </div>
-    <div>
-        <h1>THIS IS FOOTER FOR ALL PAGES</h1>
-    </div>
+    <footer class="footer">
+    <small class="footer-copyright">©2020 Nandini, Inc. All Rights Reserved.</small>
+    </footer>
       </React.Fragment>
     
    )
