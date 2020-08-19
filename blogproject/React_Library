@@ -9,3 +9,9 @@ Installation
 $ npm i --save @fortawesome/free-brands-svg-icons
 $ npm i --save @fortawesome/fontawesome-svg-core
 $ npm i --save @fortawesome/react-fontawesome
+
+2)ReactPlayer:-A React component for playing a variety of URLs, including file paths, YouTube, Facebook,
+ Twitch, SoundCloud, Streamable, Vimeo, Wistia, Mixcloud, and DailyMotion.
+ 
+ Usage:-
+npm install react-player

@@ -2,6 +2,7 @@ import React, { useState, useEffect }  from 'react';
 import './style.css';
 import Card from '../UI/Card';
 import blogPost from '../../data/blog.json';
+import ResponsivePlayer from '../ResponsivePlayer/ResponsivePlayer';
 
 const BlogPost=(props)=> {
 
@@ -33,7 +34,10 @@ const BlogPost=(props)=> {
             postreviewdata.push(
                 <div>
                     <h2>{post.Reviewdata[i].name}</h2>
-                    <h2>{post.Reviewdata[i].genre}</h2>
+                    <h3>{post.Reviewdata[i].genre}</h3>
+                    <h3>{post.Reviewdata[i].IMDBRating}</h3>
+                    <ResponsivePlayer  url={post.Reviewdata[i].TrailerLink}> </ResponsivePlayer>
+                    <h3>{post.Reviewdata[i].Synopsis}</h3>
                 </div>
             ); 
           }

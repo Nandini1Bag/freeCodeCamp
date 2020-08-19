@@ -1,7 +1,7 @@
 body{
   font-family: 'Oswald', sans-serif;
   background-color: #1fc8db; /* For browsers that do not support gradients */
-  background-image: linear-gradient(141deg, #9fb8ad 5%, #1fc8db 51%, #c7ca9e 75%); /* Standard syntax (must be last) */
+  background-image: linear-gradient(141deg, #9fb8ad 5%, #1fc8db 51%, #c7ca9e 85%); /* Standard syntax (must be last) */
 }
 
 .App{
