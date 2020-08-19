@@ -9,8 +9,8 @@ class ResponsivePlayer extends Component {
           <ReactPlayer
             className={classes.reactPlayer}
             url= {this.props.url}
-            width='100%'
-            height='100%'
+            width={this.props.width}
+            height={this.props.height}
             controls={true}
             config={{ youtube: { playerVars: { disablekb: 1 } } }} 
             /* To disable keyboard shortcuts, use disabledkb: 1 in the playerVars:*/

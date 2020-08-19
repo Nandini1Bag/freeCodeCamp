@@ -36,7 +36,9 @@ const BlogPost=(props)=> {
                     <h2>{post.Reviewdata[i].name}</h2>
                     <h3>{post.Reviewdata[i].genre}</h3>
                     <h3>{post.Reviewdata[i].IMDBRating}</h3>
-                    <ResponsivePlayer  url={post.Reviewdata[i].TrailerLink}> </ResponsivePlayer>
+                    <div>
+                    <ResponsivePlayer  url={post.Reviewdata[i].TrailerLink} width ={'560px'} height={'360px'}> </ResponsivePlayer>
+                    </div> 
                     <h3>{post.Reviewdata[i].Synopsis}</h3>
                 </div>
             ); 
