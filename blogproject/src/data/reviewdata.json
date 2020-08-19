@@ -1,0 +1,20 @@
+{
+  "Reviewdata" : [
+        {
+		 "id": 1,
+         "name":"Andhadhun(India)",
+         "genre":"Thriller/Comedy",
+         "IMDB Rating": 8.3,
+         "Synopsis":"A visually impared pianist’s world careens into a series of shocking twists after he unintentionally lands at the murder scene of a former film star.",
+         "TrailerLink":"https://www.youtube.com/watch?v=2iVYI99VGaw"
+        },
+	    {
+		 "id": 2,
+         "name":"Train to Busan (South Korea)",
+         "genre":"Thriller/Horror, Zombie",
+         "IMDB Rating": 7.5,
+         "Synopsis":"As a zombie outbreak sweeps the country, a dad and his daughter take a harrowing train journey in an attempt to reach the only city that’s still safe.",
+         "TrailerLink":"https://www.youtube.com/watch?v=2iVYI99VGaw"
+        }
+  ]
+}

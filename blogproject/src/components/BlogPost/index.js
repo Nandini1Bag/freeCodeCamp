@@ -12,7 +12,8 @@ const BlogPost=(props)=> {
         postedOn: "" ,
         author: "" ,
         blogImage: "" ,
-        blogText: ""
+        blogText: "",
+        Reviewdata:""
     });
     const [slug, setSlug] = useState('');
     
@@ -25,6 +26,10 @@ const BlogPost=(props)=> {
     }, [post, props.match.params.slug]);
 
     if(post.blogImage == "") return null;
+
+    if(post.Reviewdata !== "") {
+        
+    };
 
     return (
         <div className="blogPostContainer">
