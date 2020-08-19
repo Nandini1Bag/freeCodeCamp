@@ -25,10 +25,18 @@ const BlogPost=(props)=> {
         setSlug(slug)
     }, [post, props.match.params.slug]);
 
+    let postreviewdata=[];
     if(post.blogImage == "") return null;
 
     if(post.Reviewdata !== "") {
-        
+        for (let i in post.Reviewdata) {
+            postreviewdata.push(
+                <div>
+                    <h2>{post.Reviewdata[i].name}</h2>
+                    <h2>{post.Reviewdata[i].genre}</h2>
+                </div>
+            ); 
+          }
     };
 
     return (
@@ -45,6 +53,7 @@ const BlogPost=(props)=> {
         <div className="postContent">
         <h3>{post.blogTitle}</h3>
         <p>{post.blogText}</p>
+        <p>{postreviewdata}</p>
         </div>
         </Card> 
         </div>  
