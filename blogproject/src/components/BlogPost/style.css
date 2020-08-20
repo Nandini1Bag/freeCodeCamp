@@ -53,3 +53,9 @@
     letter-spacing: 1px;
     padding-bottom: 20px;
 }
+
+.SocialMediaShare{
+    display: flex;  
+    font-size: 16px;
+    letter-spacing: 1px;
+}

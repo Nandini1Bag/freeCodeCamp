@@ -13,5 +13,13 @@ $ npm i --save @fortawesome/react-fontawesome
 2)ReactPlayer:-A React component for playing a variety of URLs, including file paths, YouTube, Facebook,
  Twitch, SoundCloud, Streamable, Vimeo, Wistia, Mixcloud, and DailyMotion.
  
- Usage:-
+Usage:-
 npm install react-player
+
+
+3)react-share :- This library provides the most popular social media buttons. 
+It is very easy to use and manage. It also supports various functionality like share, Like, follow.
+
+Installation and Setup : npm install react-share 
+
+https://medium.com/camperstribe/react-social-media-integration-with-react-share-and-react-helmet-84d9def6a445

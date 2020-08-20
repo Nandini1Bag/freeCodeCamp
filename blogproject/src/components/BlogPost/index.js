@@ -3,6 +3,7 @@ import './style.css';
 import Card from '../UI/Card';
 import blogPost from '../../data/blog.json';
 import ResponsivePlayer from '../ResponsivePlayer/ResponsivePlayer';
+import SocialMediaShareButtons from '../SocialMediaShare/index';
 
 const BlogPost=(props)=> {
 
@@ -62,6 +63,10 @@ const BlogPost=(props)=> {
         <h3>{post.blogTitle}</h3>
         <p>{post.blogText}</p>
         <p>{postreviewdata}</p>
+        <br/>
+        <div className="SocialMediaShare">
+        <span>Share this:</span><SocialMediaShareButtons/>
+        </div>
         </div>
         </Card> 
         </div>  
