@@ -30,16 +30,18 @@ const BlogPost=(props)=> {
     if(post.blogImage == "") return null;
 
     if(post.Reviewdata !== "") {
+
         for (let i in post.Reviewdata) {
+            let num=Number(i)+1;
             postreviewdata.push(
-                <div>
-                    <h2>{post.Reviewdata[i].name}</h2>
-                    <h3>{post.Reviewdata[i].genre}</h3>
-                    <h3>{post.Reviewdata[i].IMDBRating}</h3>
-                    <div>
+                <div>                  
+                    <h2>{num +". "+ post.Reviewdata[i].name}</h2>
+                    <h3>{'Genre:- '+ post.Reviewdata[i].genre}</h3>
+                    <h3>{'IMDB-Rating:- '+ post.Reviewdata[i].IMDBRating}</h3>
+                    <div style={{marginLeft:'95px'}}>
                     <ResponsivePlayer  url={post.Reviewdata[i].TrailerLink} width ={'560px'} height={'360px'}> </ResponsivePlayer>
                     </div> 
-                    <h3>{post.Reviewdata[i].Synopsis}</h3>
+                    <h3>{'Synopsis:- '+post.Reviewdata[i].Synopsis}</h3>
                 </div>
             ); 
           }
