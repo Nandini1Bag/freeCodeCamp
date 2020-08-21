@@ -65,7 +65,7 @@ const BlogPost=(props)=> {
         <p>{postreviewdata}</p>
         <br/>
         <div className="SocialMediaShare">
-        <span>Share this:</span><SocialMediaShareButtons/>
+        <span>Share this post on :</span><SocialMediaShareButtons/>
         </div>
         </div>
         </Card> 
