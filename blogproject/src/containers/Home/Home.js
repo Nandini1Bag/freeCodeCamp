@@ -1,7 +1,7 @@
 import React from 'react';
 import './Home.css';
 import Card from '../../components/UI/Card';
-import RecentPosts from './RecentPosts';
+import RecentPosts from './RecentPosts/RecentPosts';
 
 import blogData from '../../data/blog.json';
 import Layout from '../../components/Layout';
