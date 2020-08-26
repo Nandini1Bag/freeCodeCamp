@@ -60,9 +60,11 @@
             "blogImage": "memories-from.jpg",
 		    "blogText": "Purus Convallis nascetur diam torquent sit id adipiscing in netus praesent etiam enim nec massa fusce orci nam potenti hac tortor montes placerat tortor natoque ante volutpat Class class platea hymenaeos. Nibh. Nec Ipsum tincidunt nam cubilia. Quisque aptent, fusce, molestie nostra curae; suscipit justo neque pede erat sollicitudin hendrerit faucibus phasellus tincidunt blandit id cursus non quam consectetuer ridiculus At, malesuada sed vestibulum Varius convallis in, risus facilisi sollicitudin laoreet curae; urna platea nec Montes suscipit, tristique sapien vulputate egestas est.\n\nLacus pretium. Vulputate sed penatibus commodo. Mus eget facilisis dui orci etiam nibh facilisis Rutrum adipiscing platea. Torquent pulvinar quam. Diam ante dignissim tincidunt proin curae; nulla nisi. Facilisi. Ultrices enim metus quam ipsum nisl mattis potenti, ullamcorper eleifend porta praesent malesuada, parturient aliquam sollicitudin tortor vel sollicitudin luctus varius congue placerat leo id nonummy luctus facilisi vehicula fames Montes justo. Ridiculus vel aliquam class dictumst. Malesuada taciti est id tortor.",
             "Reviewdata" : [
-                      {"id": 1,"name":"Andhadhun(India)","genre":"Thriller/Comedy","IMDBRating": 8.3,"Synopsis":"A visually impared pianist’s world careens into a series of shocking twists after he unintentionally lands at the murder scene of a former film star.", "TrailerLink":"https://www.youtube.com/watch?v=2iVYI99VGaw" },
-	                  {"id": 2,"name":"Train to Busan (South Korea)","genre":"Thriller/Horror, Zombie","IMDBRating": 7.5,"Synopsis":"As a zombie outbreak sweeps the country, a dad and his daughter take a harrowing train journey in an attempt to reach the only city that’s still safe.","TrailerLink":"https://www.youtube.com/watch?v=1ovgxN2VWNc"
-        }
+                      {"id": 1,"name":"Andhadhun(India)","genre":"Thriller/Comedy","IMDBRating": 8.3,"Synopsis":"A visually impared pianist’s world careens into a series of shocking twists after he unintentionally lands at the murder scene of a former film star.", "TrailerLink":"https://www.youtube.com/watch?v=OCcYCvVYzJU&t=53s" },
+	                  {"id": 2,"name":"Train to Busan (South Korea)","genre":"Thriller/Horror, Zombie","IMDBRating": 7.5,"Synopsis":"As a zombie outbreak sweeps the country, a dad and his daughter take a harrowing train journey in an attempt to reach the only city that’s still safe.","TrailerLink":"https://www.youtube.com/watch?v=1ovgxN2VWNc"},
+       	              {"id": 3,"name":"Dangal(India)","genre":"Sports/family drama","IMDBRating": 8.4,"Synopsis":"A once-promising wrestler pursues the gold medal he never won by training two of his daughters to compete at the Commonwealth Games.","TrailerLink":"https://www.youtube.com/watch?v=XuIVa_K59QE"
+
+	   }
   ]
         }
     ]
