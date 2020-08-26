@@ -5,16 +5,16 @@ import './style.css';
 
 const AboutUs=()=> {
     return (
-        <div>
-        <Layout>
+        <Layout Aboutme={false}>
+        <div className="AboutmeContainer">       
          <Card style={{marginBottom: '20px'}}>
-         <div className="AboutPage" style={{textAlign: 'center'}}>
-                <h2>About Me</h2>
-                <span>NOVEMBER 30, 2020 BY NANDINI DAS </span>
-                <div className="AboutImage">
+         <div className="AboutPageHeader">
+                <h2 className="Title">About Me</h2>
+                <span className="postedBy">NOVEMBER 30, 2020 BY NANDINI DAS </span>
+                <div className="AboutmeImageContainer">
                         <img src={require('../../blogPostImages/Aboutme.JPG')} alt="" />
                  </div>
-                 <div  className="mainpara">
+                <div className="AboutmeContent">
                 <p>Hi, it's Nandini. I am a software engineer from India but working remotely most of the time. 
                 First of all, thank you for reading my blog.It's such a pleasure to have you here!</p>
                 <p>
@@ -29,12 +29,11 @@ const AboutUs=()=> {
                 my blog. During this journey, I found out about teaching as a fulfilling activity and therefore self-published 2 ebooks and launched a course platform. Fast forward in 2017, I decided to be self-employed, doing freelance and consultant work mostly related to web development. But I am always keen to learn something new, so I try to push myself every day. I am open for any opportunities in this field or software engineering, so find out how to work with me.
                 </p>
                 </div>
-                  
-
             </div>
             </Card>
-            </Layout>
+         
         </div>
+        </Layout>
     )
 }
 

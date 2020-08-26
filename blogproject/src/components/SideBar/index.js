@@ -18,12 +18,13 @@ const Sidebar = (props) => {
     }, [posts]);
 
 
+   const  SideAboutMe = props => {
+         if (!props.Aboutme) {
+           return null;
+              }
 
-  return(
-      <div className="sidebarContainer" style={{
-          width: props.width
-      }}>
-            <Card style={{ marginBottom: '20px', padding: '20px', boxSizing: 'border-box' }}>
+            return (
+                <Card style={{ marginBottom: '20px', padding: '20px', boxSizing: 'border-box' }}>
                 <div className="cardHeader">
                     <span>About Us</span>
                 </div>
@@ -34,7 +35,13 @@ const Sidebar = (props) => {
                     <p className="personalBio">My name is Nandini Bag I am a software developer specialization in Front end developement....:)</p>
                 </div>
             </Card>
+            );
+        }
 
+
+  return(
+      <div className="sidebarContainer" style={{width: props.width}}>
+           <SideAboutMe Aboutme={props.Aboutme}/>
             <Card style={{ marginBottom: '20px', padding: '20px', boxSizing: 'border-box' }}>
                 <div className="cardHeader">
                 <span>Follow Us on Social Media</span>

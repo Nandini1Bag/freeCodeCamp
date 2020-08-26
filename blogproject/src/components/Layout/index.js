@@ -8,7 +8,7 @@ const Layout = (props) => {
       <React.Fragment>
           <div className="container">
         {props.children}
-        <SideBar />
+        <SideBar  Aboutme={props.Aboutme}/>
     </div>
     <footer className="footer">
     <small className="footer-copyright">©2020 Nandini, Inc. All Rights Reserved.</small>

@@ -53,7 +53,7 @@ const Home  = props => {
                             imagesArray={imgAr}
                         />
             </Card>
-                <Layout>
+                <Layout Aboutme={true}>
                     <RecentPosts style={{width: '70%'}}/>
                 </Layout>
         </div>
