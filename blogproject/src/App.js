@@ -6,7 +6,7 @@ import Hero from './components/Hero';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import ContactUs from './containers/ContactUs/ContactUs';
 import AboutUs from './containers/AboutUs/AboutUs';
-import Post from './containers/Post';
+import Post from './containers/Post/Post';
 
 function App() {
   return (
