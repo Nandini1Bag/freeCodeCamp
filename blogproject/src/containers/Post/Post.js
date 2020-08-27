@@ -9,7 +9,7 @@ const Post = (props) => {
     console.log(props);
 
   return(
-        <Layout>
+        <Layout Aboutme={true}>
           <BlogPost {...props} />
         </Layout>
    )
