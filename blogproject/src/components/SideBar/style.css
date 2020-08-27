@@ -24,9 +24,11 @@
 }
 
 .personalBio{
+    color: #6c6c6c;
+    letter-spacing: 1px;
     font-size: 14px;
-    color: #565673;
-    font-weight: 300;
+    font-weight: 500;
+    margin: 0;
 }
 .recentPosts{
     padding: 20px 0;

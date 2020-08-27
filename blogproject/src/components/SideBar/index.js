@@ -26,13 +26,16 @@ const Sidebar = (props) => {
             return (
                 <Card style={{ marginBottom: '20px', padding: '20px', boxSizing: 'border-box' }}>
                 <div className="cardHeader">
-                    <span>About Us</span>
+                    <span>About Me</span>
                 </div>
                 <div className="profileImageContainer">
                     <img src={require('../../blogPostImages/Aboutme.JPG')} alt="" />
                 </div>
                 <div className="cardBody">
-                    <p className="personalBio">My name is Nandini Bag I am a software developer specialization in Front end developement....:)</p>
+                   <NavLink to="/about-us" >
+                   <p className="personalBio">Hi, it's Nandini. I am a software engineer from India 
+                   but working remotely most of the time.....:)</p>
+                   </NavLink>              
                 </div>
             </Card>
             );
