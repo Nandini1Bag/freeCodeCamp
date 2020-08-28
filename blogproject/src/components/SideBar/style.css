@@ -54,3 +54,47 @@
 .socialFollow{
     padding: 17px 0;
 }
+
+.emailCard p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.emailCard label{
+    font-size: 11px;
+}
+
+.emailCard input{
+    display: inline-block;
+    padding: .65em .85em;
+    color: #777;
+    border: 1px dashed #ddd;
+    border-radius: 7px;
+    background: #f3f3f3;
+	transition: 0.3s linear;
+}
+
+.emailCard input:focus {background: #a7d8dd;}
+
+.Subscribe{
+    background-image: linear-gradient(to left,  #c7ca9e 0%,lightseagreen 100%);
+	box-shadow: 0 9px 25px -5px lightseagreen;
+	font-family: 'Abel', sans-serif;
+	padding: 0.5em 1.9em;
+	margin: 0.3em 0 0 0;
+	border-radius: 7px;
+	font-size: 1.4em;
+	cursor: pointer;
+	color: #FFFFFF;
+	font-size: 1em;
+	outline: none;
+	border: none;
+	transition: 0.3s linear;   
+}
+.Subscribe:hover {
+    opacity: 0.8;
+    transform: translatey(2px);
+  }

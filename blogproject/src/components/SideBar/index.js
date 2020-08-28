@@ -53,7 +53,20 @@ const Sidebar = (props) => {
                 <SocialFollow size='2x' padding='5px'/>
                 </div>
             </Card>
-
+            <Card style={{ marginBottom: '20px', padding: '20px', boxSizing: 'border-box' }}>
+            <div className="cardHeader">
+            <span>Get notified about new articles!!</span>
+                <form action="" method="post" novalidate="">
+                    <div className="emailCard">
+                    <p>
+                        <label>Email address: </label>
+                        <input type="email" name="EMAIL" placeholder="Your email" required/>
+                    </p>
+                    <p><button className="Subscribe" type="submit">Subscribe</button></p>
+                   </div>
+                 </form>
+            </div>
+            </Card>
             <Card style={{ marginBottom: '20px', padding: '20px', boxSizing: 'border-box' }}>
                 <div className="cardHeader">
                     <span>Recent Posts</span>
