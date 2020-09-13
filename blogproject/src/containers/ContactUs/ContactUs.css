@@ -1,0 +1,28 @@
+.ContactusContainer{
+    width: 70%;
+}
+
+.PageHeader{
+    text-align: center;
+}
+
+.Title{
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+    font-size: 30px;
+    margin: 0;
+    font-weight: 400;
+}
+
+
+.ContactusContent{
+    padding: 4px;
+    margin: 5px;
+}
+
+.ContactusContent p {
+    text-indent: 50px;
+    text-align: justify;
+    letter-spacing: 2px;
+    margin: 50px;
+  }
