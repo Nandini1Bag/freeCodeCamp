@@ -11,11 +11,11 @@ const ContactUsForm=()=> {
         <div className='FormContent'>
        <form onSubmit={this.handleSubmit}>
          <div>
-         <label>Your Name</label>
+         <label>Your Name :</label>
           <input type="text" name="contactp" placeholder="Your name.." maxlength="30"/>
          </div>
         <div>
-        <label>Your Email <i>(required)</i></label>
+        <label>Your Email <i>(required)</i> :</label>
         <input type="text" name="emailid" placeholder="Your Emailid.." maxlength="75" ></input>
         </div>
         <div>
@@ -23,8 +23,8 @@ const ContactUsForm=()=> {
             <input type="text" name="subject"  maxlength="50"/>
          </div>        
          <div>
-            <label>Message <i>(required)</i></label>
-            <textarea id="Message" name="message"  ></textarea>
+            <label>Message <i>(required)</i> :</label>
+            <textarea placeholder="Remember, be nice!" cols="20" rows="5"></textarea>
          </div>
         <input type="submit" value="Send Message" />
       </form>

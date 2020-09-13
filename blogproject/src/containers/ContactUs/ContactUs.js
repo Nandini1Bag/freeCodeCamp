@@ -12,7 +12,7 @@ const ContactUs=()=> {
         <div className="PageHeader">
         <h2 className="Title">Contact us</h2>
          <div className="ContactusContent">
-           <p>*I absolutely love hearing from my readers. 
+           <p>I absolutely love hearing from my readers. 
              You guys are the reason why I write this blog! That said, 
              I get numerous emails per day that take hours to answer.  
              Please don’t hesitate to reach out, but if your question is travel tip or planning-specific,
