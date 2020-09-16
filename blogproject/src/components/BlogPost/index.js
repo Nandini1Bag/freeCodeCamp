@@ -2,6 +2,7 @@ import React, { useState, useEffect }  from 'react';
 import './style.css';
 import Card from '../UI/Card';
 import blogPost from '../../data/blog.json';
+import axios from '../../axios-connect';
 import ResponsivePlayer from '../ResponsivePlayer/ResponsivePlayer';
 import SocialMediaShareButtons from '../SocialMediaShare/index';
 
@@ -18,14 +19,29 @@ const BlogPost=(props)=> {
         Reviewdata:""
     });
     const [slug, setSlug] = useState('');
-    
+    const [isError, setIsError] = useState(false);
     //hooks
     useEffect(() => {
-        const slug = props.match.params.slug;
-        const post = blogPost.data.find(post => post.slug == slug);
-        setPost(post);
-        setSlug(slug)
-    }, [post, props.match.params.slug]);
+       const slug = props.match.params.slug;
+       //Note:- https://www.bradcypert.com/fetching-data-with-react-hooks/
+       //Note that the useEffect callback cannot be asynchronous. 
+       //Instead, React recommends declaring an async function in your callback 
+       //and executing it immediately. 
+       const fetchData = async () => {
+        setIsError(false);
+        try {
+            const result = await axios(
+                'https://blogsite-73583.firebaseio.com/data.json',
+            );
+            const post = result.data.find(post => post.slug == slug);
+            setPost(post);
+          } catch (error) {
+            setIsError(true);
+          }    
+      };
+      fetchData();
+      setSlug(slug)
+    }, [props.match.params.slug]);
 
     let postreviewdata=[];
     if(post.blogImage == "") return null;
@@ -62,6 +78,7 @@ const BlogPost=(props)=> {
         <div className="postContent">
         <h3>{post.blogTitle}</h3>
         <p>{post.blogText}</p>
+        {isError && <div>Something went wrong ...</div>}
         <p>{postreviewdata}</p>
         <br/>
         <div className="SocialMediaShare">
