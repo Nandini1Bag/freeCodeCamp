@@ -5,7 +5,7 @@ const Logo =(props)=> {
     return (
         <div className="logo">
            <a href="#">The Techie Traveller Diary </a> 
-           <p class="site-description">Tech, Travel, &amp; Culture Blogs</p> 
+           <p className="site-description">Tech, Travel, &amp; Culture Blogs</p> 
         </div>
     )
 }

@@ -32,7 +32,7 @@ const BlogPost=(props)=> {
             const result = await axios(
                 'https://blogsite-73583.firebaseio.com/data.json',
             );
-            const post = result.data.find(post => post.slug == slug);
+            const post = result.data.find(post => post.slug === slug);
             setPost(post);
           } catch (error) {
             setIsError(true);

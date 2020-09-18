@@ -9,7 +9,8 @@ import { NavLink } from 'react-router-dom';
 const Sidebar = (props) => {
 
     const [posts, setPosts] = useState([]);
-    const [isError, setIsError] = useState(false);    
+    const [isError, setIsError] = useState(false); 
+    const [email, setEmail] = useState('');
     
     useEffect(() => {
      
@@ -28,6 +29,28 @@ const Sidebar = (props) => {
           fetchData();
 
     }, []);
+
+   const handleSubmit = event => {
+        event.preventDefault();
+        try {
+            axios.post('https://blogsite-73583.firebaseio.com/subscribers.json', { email })
+            .then(res=>{
+              console.log(res.data);
+              let successMessage = document.querySelector('.success-message');
+              successMessage.innerHTML = JSON.stringify("Sucessfully subcribed." );
+              setTimeout( () => {
+                document.querySelector('.success-message').remove();
+            }, 2000);
+             // window.location = "/retrieve" //This line of code will redirect you once the submission is succeed
+            })
+        } catch (error) {
+            let successMessage = document.querySelector('.success-message');
+            successMessage.innerHTML = JSON.stringify(error);
+            setTimeout( () => {
+                document.querySelector('.success-message').remove();
+            }, 2000);
+        }
+      }
 
 
    const  SideAboutMe = props => {
@@ -68,14 +91,18 @@ const Sidebar = (props) => {
             <Card style={{ marginBottom: '20px', padding: '20px', boxSizing: 'border-box' }}>
             <div className="cardHeader">
             <span>Get notified about new articles!!</span>
-                <form action="" method="post" novalidate="">
+                <form onSubmit = {handleSubmit }>
                     <div className="emailCard">
                     <p>
                         <label>Email address: </label>
-                        <input type="email" name="EMAIL" placeholder="Your email" required/>
+                        <input type="email" name="EMAIL" placeholder="Your email" required
+                        onChange={e => setEmail(e.target.value)}/>
                     </p>
                     <p><button className="Subscribe" type="submit">Subscribe</button></p>
                    </div>
+                   <div className="success-message">
+                <label></label>
+                </div>
                  </form>
             </div>
             </Card>
