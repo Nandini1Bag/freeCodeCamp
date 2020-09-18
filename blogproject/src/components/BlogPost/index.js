@@ -1,7 +1,6 @@
 import React, { useState, useEffect }  from 'react';
 import './style.css';
 import Card from '../UI/Card';
-import blogPost from '../../data/blog.json';
 import axios from '../../axios-connect';
 import ResponsivePlayer from '../ResponsivePlayer/ResponsivePlayer';
 import SocialMediaShareButtons from '../SocialMediaShare/index';

@@ -2,20 +2,32 @@ import React, { useState, useEffect } from 'react';
 import './style.css';
 import Card from '../UI/Card';
 import SocialFollow from "../SocialFollow";
-
-import blogPost from '../../data/blog.json';
+import axios from '../../axios-connect';
 import { NavLink } from 'react-router-dom';
 
 
 const Sidebar = (props) => {
 
     const [posts, setPosts] = useState([]);
-    
+    const [isError, setIsError] = useState(false);    
     
     useEffect(() => {
-        const posts = blogPost.data;
-        setPosts(posts);
-    }, [posts]);
+     
+        const fetchData = async () => {
+            setIsError(false);
+            try {
+                const result = await axios(
+                    'https://blogsite-73583.firebaseio.com/data.json',
+                );
+                const posts = result.data;
+                setPosts(posts);
+              } catch (error) {
+                setIsError(true);
+              }    
+          };
+          fetchData();
+
+    }, []);
 
 
    const  SideAboutMe = props => {
@@ -71,7 +83,7 @@ const Sidebar = (props) => {
                 <div className="cardHeader">
                     <span>Recent Posts</span>
                 </div>
-
+                {isError && <div>Something went wrong ...</div>}
                 <div className="recentPosts">
 
                     {
