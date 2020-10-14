@@ -26,13 +26,12 @@ const searchClass=search?'searchinput active': 'searchinput';
             <li><NavLink to="/post">Posts</NavLink></li>
             <li><NavLink to="/contact-us">Contact Us</NavLink></li>
             </ul>
-            <div className="search">
+            {/* <div className="search">
             <form onSubmit={submitSearch}>
              <input type="text" className={searchClass} placeholder="Search"/>
              <img  onClick={openSearch} className="searchicon" src={require('../../assets/icons/search.png')} alt="search"/>
             </form>
-
-            </div>
+            </div> */}
         </div>
     )
 }

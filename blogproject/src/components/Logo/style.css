@@ -2,14 +2,14 @@
 .logo{
     text-align: center;
 }
-.logo a{
+.site{
     font-family: 'Dancing Script', cursive;
     font-size: 50px;
     text-decoration: none;
-    color:  lightseagreen; ;
+    color:  lightseagreen; 
+    padding-top: 30px;
 }
 .site-description{
-    margin: .5em 0 .25em;
     font-family: Lora, Garamond, serif;
     font-size: 25px;
     font-style: italic;

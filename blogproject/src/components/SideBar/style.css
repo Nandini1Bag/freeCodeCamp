@@ -98,3 +98,17 @@
     opacity: 0.8;
     transform: translatey(2px);
   }
+
+  .success-message{
+    background-image: linear-gradient(to left,  #c7ca9e 0%,lightseagreen 100%);
+	box-shadow: 0 9px 25px -5px lightseagreen;
+    font-family: 'Abel', sans-serif; 
+    border-radius: 7px;
+	font-size: 1.4em;
+	color: #FFFFFF;
+	font-size: 1em;
+	outline: none;
+    border: none;
+    padding: 0.5em 1.9em;
+	margin: 0.3em 0 0 0;
+  }

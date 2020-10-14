@@ -8,7 +8,7 @@ const Hero =()=> {
     return (
         <div>
           <Card>
-              <div style={{padding:'50px 0'}}>
+              <div>
               <Logo/>  
               </div>
               <Navbar/>

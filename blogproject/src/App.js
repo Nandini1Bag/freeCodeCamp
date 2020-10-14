@@ -15,12 +15,10 @@ function App() {
       <div className="App">
         <Header />
         <Hero />
-
         <Route path="/" exact component={Home} />
         <Route path="/contact-us"  component={ContactUs}/>
         <Route path="/about-us"  component={AboutUs}/>
         <Route path="/post/:slug" component={Post} />
-
         
       </div>
     </Router>
