@@ -1,27 +1,119 @@
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" href="Styles.css">
+    <!-- <link rel="stylesheet" href="./social-media-icons.css"> -->
+    <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
   </head>
 <html>
 <body>
+ 
+  <div class="scrollbar" >
+    <div class="force-overflow"></div>
+  </div>
     <header>
-  <nav id="navbar">
-      <ul>
+  <!-- <nav id="navbar">
+   <ul>
    <li><a  class="nav-link"href="#About">About</a></li>
         <li><a  class="nav-link" href="#Works">Works</a></li>
           <li><a  class="nav-link" href="#Contact">Contact</a></li>
     </ul>
-  </nav> 
+  </nav>  -->
+
+  <div class="banner-text">
+    <nav class="stroke">
+		<ul>
+      <li><a  class="nav-link"href="#Home">Home</a></li>
+			<li><a  class="nav-link"href="#About">About</a></li>
+      <li><a  class="nav-link"href="#Experiments">Experiments</a></li>
+      <li><a  class="nav-link" href="#Contact">Contact</a></li>
+		</ul>
+    </nav>
+	</div>
   </header>
- 
-  <div id="About">
+
+  <section id="rotating-section">
+    <div class="area" >
+      <ul class="circles">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+      </ul>
+    </div >
+  </section>
+
+  <div id="Me">
 <section id="welcome-section">
   <div id="center">
-    <h1> Hey I am Nandini</h1>
-    <p id="web">a web developer</p>
-  </div>
-</section></div>
+    <h1> Hey! I am Nandini.</h1>
+    <h1>I code for the Web.</h1>
+    <!-- <p id="web">I work on Web.</p> -->
+  </div>  
+</section>
+</div>
 
+<section class="about section">
+  <div id="About">
+    <h1 class="section_header">About</h1>
+    <div class="about_grid_container">
+      <img  src="images/test.JPG"  alt="About" width="300" height="300">
+
+<div class="description">
+  <p>
+    I’m Nandini Bag a software engineer with over a decade of experience. 
+    I like to resolve design problems, create smart user interface and imagine useful interaction, developing rich web experiences & web applications.
+  </p> 
+  <button class="button ">Download CV</button>
+  <div class="social-menu">
+    <ul>
+        <li><a href="https://github.com/Nandini1Bag" target="blank"><i class="fab fa-github"></i></i></a></li>
+        <li><a href="https://www.instagram.com" target="blank"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://www.linkedin.com" target="blank"><i class="fab fa-linkedin-in"></i></a></li>
+        <li><a href="https://codepen.io/nandini1bag"><i class="fab fa-codepen" target="blank"></i></a></li> 
+    </ul>
+</div> 
+</div>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div id="Experiments">
+    <h1 class="section_header">Experiments</h1>
+  
+  </div>
+</section>
+
+<section>
+  <div id="Contact">
+    <h1 class="section_header">Contact </h1>
+  
+  <div class="FormContent">
+    <form action="/action_page.php">
+      <label for="fname">Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+  
+      <label>Your Email <i>(required)</i> :</label>
+      <input type="text" name="emailid" placeholder="Your Emailid.." maxlength="75" ></input>
+  
+       <label>Message <i>(required)</i> :</label>
+       <textarea placeholder="Remember, be nice!" cols="20" rows="5"></textarea>
+  
+      <input type="submit" value="Send Message">
+    </form>
+  </div>
+</div>
+</section>
+
+
+<!-- 
 <div id="Works">
 <section id="projects">
   <h1 id="underlinehead">These are some of my projects</h1>
@@ -49,13 +141,13 @@
            </li>
  </ul>
  <a id="profile-link" href="https://codepen.io/dashboard/" target="_blank">Show All  > </a>
- </section></div>
+ </section></div> -->
  
-  <footer id="Contact">
+  <!-- <footer id="Contact">
   <h1>Let's work together...</h1>
     <p>How do you take your coffee?</p>
   <p><a href="mailto:hege@example.com">hege@example.com</a></p>
-</footer>
+</footer> -->
   
   </body>
 </html>
