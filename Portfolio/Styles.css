@@ -365,15 +365,32 @@ img {
     align-content: end;
     grid-template-columns: auto auto auto;
     grid-gap: 10px;
-    background-color: #2196F3;
     padding: 10px;
   }
   
   .about_grid_container > div {
-    background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
     padding: 20px 0;
     font-size: 30px;
+  }
+
+  .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+  }
+  .buttoncv {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #8f94fb;
   }
 /* social media */
 
