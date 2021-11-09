@@ -383,7 +383,7 @@ img {
       }
 
 
-  .section hr{
+  section hr{
     width: 10%;
     height: 2px;
     background-color: #CECECE;
@@ -519,7 +519,9 @@ img {
   animation-direction: alternate;
 }
 
-
+.Contact_section{
+  padding: 40px;
+}
 
 /* contact form */
 .FormContent{
@@ -535,7 +537,7 @@ img {
     background-color: rgba(255, 255, 255, 0.089);/* glassmorphism */
     border: 1px solid rgba(255,255,255,0.1);/* glassmorphism */
     margin:0 auto;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 
@@ -582,4 +584,13 @@ img {
  outline: none;
  font-size: 1.2em;
  resize: none;
+}
+.footerdiv{
+  text-align: center;
+  padding: 10px; 
+}
+footer hr{
+  border-top-color:#bbb;
+  opacity:0.5 ;
+  margin:7px;
 }
